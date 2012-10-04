@@ -39,6 +39,11 @@
 	.syntax unified
 	.arch armv7-a
 
+ENTRY(bzero)
+	mov     r2, r1
+	mov     r1, #0
+END(bzero)
+
 @ 2011-08-30 david.gilbert@linaro.org
 @    Extracted from local git 2f11b436
 
